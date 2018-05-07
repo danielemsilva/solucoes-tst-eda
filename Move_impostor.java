@@ -11,8 +11,8 @@ class Main {
     }
     searchNumber(integers);
   }
-  
-  public static void searchNumber(int[] array) {
+
+  private static void searchNumber(int[] array) {
     boolean found = false;
     int i = 0;
     while(i < array.length && !found){
@@ -24,8 +24,8 @@ class Main {
     }
     System.out.println(Arrays.toString(array));
   }
-  
-  public static void exchange(int[] array, int position) {
+
+  private static void exchange(int[] array, int position) {
     for(int i = position; i >= 1; i--){
       if (array[i] < array[i - 1]) {
         int aux = array[i];
