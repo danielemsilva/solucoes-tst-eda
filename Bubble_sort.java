@@ -12,7 +12,8 @@ class Main {
   }
 
   private static void sort(int[] array) {
-		boolean changed = false;
+		boolean sorted = true;
+		boolean changed;
 		do {
 			changed = false;
 			for (int i = 0; i < array.length - 1; i++) {
@@ -20,17 +21,18 @@ class Main {
 				  int aux = array[i];
 				  array[i] = array[i + 1];
 				  array[i + 1] = aux;
+					sorted = false;
 					changed = true;
 	      }
 	    }
 	    if (changed) {
   	    printArray(array);
-  	  }
+	    }
 		} while(changed);
 
-    if (array.length == 1) {
-      printArray(array);
-    }
+		if (sorted) {
+		  printArray(array);
+		}
   }
 
   private static void printArray(int[] array) {
