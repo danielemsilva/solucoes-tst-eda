@@ -10,16 +10,16 @@ class Main {
       integers[i] = Integer.valueOf(input[i]);
     }
     sort(integers);
-    System.out.println(Arrays.toString(array));
+    System.out.println(Arrays.toString(integers));
   }
 
   private static void sort(int[] array) {
     int noSorted = array[array.length - 1];
-    int i = array.length - 1;
-    while (i > 0 && noSorted < array[i]) {
-      int aux = array[i];
-      array[i] = array[i - 1];
-      array[i - 1] = aux;
+    int i = array.length - 2;
+    while (i >= 0 && noSorted < array[i]) {
+      int aux = array[i + 1];
+      array[i + 1] = array[i];
+      array[i] = aux;
       i--;
     }
   }
