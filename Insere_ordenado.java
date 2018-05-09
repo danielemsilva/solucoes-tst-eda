@@ -16,7 +16,7 @@ class Main {
   private static void sort(int[] array) {
     int noSorted = array[array.length - 1];
     int i = array.length - 1;
-    while (i > 0 && array[i] < array[i - 1]) {
+    while (i > 0 && noSorted < array[i]) {
       int aux = array[i];
       array[i] = array[i - 1];
       array[i - 1] = aux;
