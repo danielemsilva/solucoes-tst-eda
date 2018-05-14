@@ -14,7 +14,7 @@ class Main {
   }
 
   private static void merge(int[] array, int leftIndex, int middle, int rightIndex) {
-		// Creates an array equal to the original
+    // Creates an array equal to the original
 		int[] auxArray = Arrays.copyOf(array, array.length);
 		// This index is the beginning of the left array
 		int i = leftIndex;

@@ -15,7 +15,7 @@ class Main {
 
   private static void sort(int[] array, int leftIndex, int rightIndex) {
 		for (int i = leftIndex; i <= rightIndex; i++) {
-			if (array[leftIndex] >= array[i]) {
+      if (array[leftIndex] >= array[i]) {
         int temp = array[i];
         array[i] = array[leftIndex];
         array[leftIndex] = temp;

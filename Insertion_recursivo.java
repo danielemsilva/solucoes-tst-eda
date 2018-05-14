@@ -13,7 +13,7 @@ class Main {
   }
 
   private static void sort(int[] array, int leftIndex, int rightIndex) {
-		for (int i = leftIndex; i > 0; i--) {
+    for (int i = leftIndex; i > 0; i--) {
 			if (array[i] < array[i - 1]) {
 			  int aux = array[i];
 			  array[i] = array[i - 1];

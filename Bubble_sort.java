@@ -20,7 +20,7 @@ class Main {
 				if (array[i] > array[i + 1]) {
 				  int aux = array[i];
 				  array[i] = array[i + 1];
-				  array[i + 1] = aux;
+          array[i + 1] = aux;
 					sorted = false;
 					changed = true;
 	      }
