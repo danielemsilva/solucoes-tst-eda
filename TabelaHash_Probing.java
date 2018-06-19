@@ -36,7 +36,7 @@ class Main {
 	}
 
 	private static void put(int key, String value) {
-    if (qtdElements + 1 < table.length) {
+    if (qtdElements + 1 <= table.length) {
   		Pair newPair = new Pair(key, value);
       int probe = 0;
   		int pos = getHash(key, probe);
@@ -99,7 +99,6 @@ class Main {
 	private static int getHash(int key, int probe) {
 		return (key + probe) % table.length;
 	}
-
 
 }
 
